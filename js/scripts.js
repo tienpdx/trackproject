@@ -8,11 +8,20 @@ $(document).ready(function() {
     event.preventDefault();
 
     var fpAvail = $("input:radio[name=partFull]:checked").val();
-    var fbFocus = $("#fbSelect").val();
-    var awType = $(".form-control#awType").val();
+    var fbFocus = $("#fbFocus").val();
+    var awType = $("#awType").val();
 
-    // if (name) {
-    //   if fpAvail === ""
+      if (fpAvail === "ftime") {
+        if (fbFocus === "Back End") {
+          if(awType === "andr") {
+            $(".backJava").show();
+          } else {
+              $(".backRuby").show();
+              $(".backJava").hide();
+
+          }
+        // else  {}
+          }
+        }
+      })
   })
-
-})

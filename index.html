@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="container">
-      <h1>Track Course</h1>
+      <h1 class="jumbotron">Epicodus Track Course Recommendation</h1>
 
-      <form id="trackForm">
+      <form class="well" id="trackForm">
 
         <div class="form-group">
           <label for="name">Enter your Name:</label>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="form-group">
-          Are you available Full Time or Part Time?
+          <label for "partFull">Are you available Full Time or Part Time?</label>
           <div class="radio">
             <label>
               <input type="radio" name="partFull" value="ptime" checked> Part Time
@@ -47,42 +47,72 @@
           </div>
         </div>
 
-        <label for="fbSelect">Where would you like to focus? </label>
+        <label for="fbSelect">What would you like to focus on? </label>
         <select class="form-control" id="fbFocus">
           <option>Front End</option>
           <option>Back End</option>
         </select>
 
-        <label for="awSelect">What would you like to work on? </label>
+        <label for="awSelect">Which environment would you like to work with?</label>
         <select class="form-control" id="awType">
           <option value="web">Web Applications</option>
-          <option value="andr">Android user interface</option>
+          <option value="andr">Android</option>
           <option value="other">place holder</option>
         </select>
 
         <br>
         <button type="submit" name="button" class="btn btn-info">Submit</button>
+        <button class="btn btn-info" id="showall">Show all courses:</button>
+
+
+        <!-- <div class="greet"><br><p>Hello, <span="nameInput"></span>. Here is a possible course you may be of  interest to you:</p>
         <br>
-
+        </div> -->
           <div class="partTime">
-            <p> part time info </p>
-
             <h3>Part-Time Programming Course</h3>
-            <p> Epicodus offers a part-time version of the Introduction to Programming course. This course covers the fundamentals of web design and web development. Upon completing the course, you may continue into the full-time program if you wish.
-
-            We currently do not offer Part-Time Courses for other Tracks such as Ruby/Rails, Java/Android, and CSS/Design. However, in the Part-Time Course, we do offer basic fundamentals of HTML and CSS.</p>
+            <p> Epicodus offers a part-time version of the Introduction to Programming course. This course covers the fundamentals of web design and web development. <span class="bg-danger">We currently do not offer Part-Time Courses for other Tracks such as Ruby/Rails, Java/Android, and CSS/Design.</span> However, in the Part-Time Course, we do offer basic fundamentals of HTML and CSS. Upon completing the course, you may continue into the full-time program if you wish with other options. </p>
           </div>
 
           <div class="frontCss">
-            <p> Front End info </p>
+            <h3>CSS/Styles Course</h3>
+            <span class="bg-danger">We currently only offer this track full time.</span>
+            <p>Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
           </div>
 
           <div class="backRuby">
-            <p> ruby info </p>
+            <h3>Ruby/Rails Track</h3>
+            <span class="bg-danger">We currently only offer this track full time.</span>
+            <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework.</p>
+            <br>
+            <p>Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell.</p>
+            <br>
+            <h4>Course Overview:</h4>
+
+            <p>After establishing solid programming fundamentals in the Introduction to Programming course, this course introduces students to the Ruby framework and gives them more difficult problems to solve and a more advanced set of tools to solve them with. It also establishes the foundations for learning real-world technologies used by programmers on the job. The outline of topics for this course is as follows:</p>
+            <ul>
+              <li>Week 1: Behavior-Driven Development</li>
+              <li>Week 2: Object-Oriented Ruby</li>
+              <li>Week 3: Database Basics</li>
+              <li>Week 4: Advanced Databases with Active Record</li>
+              <li>Week 5: Group Projects</li>
+            </ul>
+
           </div>
 
           <div class="backJava">
-            <p> java info </p>
+            <h3>Java/Android Course:</h3>
+            <span class="bg-danger">We currently only offer this track full time.</span>
+            <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+            <h4>Course Overview:</h4>
+
+            <p>After establishing solid programming fundamentals in the Introduction to Programming course, this course introduces students to the Ruby framework and gives them more difficult problems to solve and a more advanced set of tools to solve them with. It also establishes the foundations for learning real-world technologies used by programmers on the job. The outline of topics for this course is as follows:</p>
+            <ul>
+              <li>Week 1: Behavior-Driven Development with Java</li>
+              <li>Week 2: Web Applications</li>
+              <li>Week 3: Database Basics</li>
+              <li>Week 4: Advanced Topics in Java</li>
+              <li>Week 5: Group Projects</li>
+            </ul>
           </div>
 
       </form>

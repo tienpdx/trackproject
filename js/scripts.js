@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  // $(".partTime").hide();
-  // $(".frontCss").hide();
-  // $(".backRuby").hide();
-  // $(".backJava").hide();
+  $(".partTime").hide();
+  $(".frontCss").hide();
+  $(".backRuby").hide();
+  $(".backJava").hide();
 
-  // $("#trackForm").submit(function(event) {
-  //   event.preventDefault();
+  $("#trackForm").submit(function(event) {
+    event.preventDefault();
     var name = $("#name").val();
     var fpAvail = $("input:radio[name=partFull]:checked").val();
     var fbFocus = $("#fbFocus").val();
@@ -30,6 +30,15 @@ $(document).ready(function() {
       } else {
         alert("Please enter your name!!")
     }
-
     });
+  $("button#showall").click(function() {
+    $(".partTime").show();
+    $(".frontCss").show();
+    $(".backRuby").show();
+    $(".backJava").show();
+    });
+
+
+
+
   });

@@ -1,0 +1,26 @@
+body {
+  background-color: #80ccff
+}
+
+
+p {
+  font-size: 14pt;
+}
+
+ul {
+  font-size: 12pt;
+}
+
+br {
+  display: block;
+  line-height: 30px;
+}
+
+.jumbotron {
+  background-color: #e6f5ff;
+  text-align: center;
+}
+
+.well {
+  background-color: #e6f5ff;
+}

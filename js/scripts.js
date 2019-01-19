@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".greet").hide();
   $(".partTime").hide();
   $(".frontCss").hide();
   $(".backRuby").hide();
@@ -30,6 +31,9 @@ $(document).ready(function() {
       } else {
         alert("Please enter your name!!")
     }
+    $(".greet").show();
+    $(".nameInput").text(name);
+
     });
   $("button#showall").click(function() {
     $(".partTime").show();

@@ -17,6 +17,10 @@ Requires a web browser that can open HTML5 (eg. Chrome, Firefox).
 * HTML
 * CSS
 * Javascript
+* Libraries:  Bootstrap (CSS) and jQuery (JS)
+
+## Contributing
+If you would like to contribute or modify to your own version, the most recommended code editor is Atom. Atom can be downloaded here: https://atom.io/
 
 ## Copyright Information
 

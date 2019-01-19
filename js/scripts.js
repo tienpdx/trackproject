@@ -7,6 +7,7 @@ $(document).ready(function() {
 
   $("#trackForm").submit(function(event) {
     event.preventDefault();
+
     var name = $("#name").val();
     var fpAvail = $("input:radio[name=partFull]:checked").val();
     var fbFocus = $("#fbFocus").val();
@@ -31,10 +32,11 @@ $(document).ready(function() {
       } else {
         alert("Please enter your name!!")
     }
-    $(".greet").show();
-    $(".nameInput").text(name);
 
+    $(".nameInput").text(name);
+    $(".greet").show();
     });
+
   $("button#showall").click(function() {
     $(".partTime").show();
     $(".frontCss").show();
